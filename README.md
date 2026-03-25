@@ -122,3 +122,13 @@ Link verifikasi ditampilkan jika tersedia:
 - CSS
 - PHP
 - Laragon
+
+# Dokumentasi Output
+## Tampilan Home
+<img width="1882" height="976" alt="image" src="https://github.com/user-attachments/assets/20b8bae8-49a5-4312-9cce-1338c3820a83" />
+
+## Tampilan About Me
+<img width="1884" height="843" alt="image" src="https://github.com/user-attachments/assets/d8654bb8-afa0-47f0-bee8-e8d78ca605b3" />
+
+## Tampilan Certificates
+<img width="1889" height="968" alt="image" src="https://github.com/user-attachments/assets/f467dbd0-9eb8-480e-a797-10f83c8e6fa4" />

@@ -1,0 +1,224 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+.glass-nav {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+}
+
+.nav-link {
+    color: #fff !important;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #00f2fe !important;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-desc {
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.8;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.2);
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-weight: 600;
+}
+
+.glass-card {
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.modern-progress {
+    height: 8px;
+    background: rgba(255,255,255,0.2);
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+}
+
+.certificate-card {
+    background: rgba(255,255,255,0.06);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    transition: 0.4s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-10px);
+}
+
+.btn-glow {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 20px #00f2fe;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+.nav-buttons .nav-item {
+    margin-left: 15px;
+}
+
+.nav-btn {
+    position: relative;
+    padding: 8px 20px !important;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    color: #fff !important;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+.nav-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(0, 242, 254, 0.6),
+    rgba(79, 172, 254, 0.8),
+    transparent
+    );
+    transition: 0.6s;
+    z-index: -1;
+}
+
+.nav-btn:hover::before {
+    left: 0;
+}
+
+.nav-btn:hover {
+    color: #000 !important;
+    border: 1px solid transparent;
+}
+
+.nav-btn:active {
+    transform: scale(0.95);
+}
+
+.nav-btn:hover {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    color: #000 !important;
+    box-shadow: 0 0 15px rgba(0,242,254,0.6);
+    transform: translateY(-2px);
+}
+
+.nav-btn:focus,
+.nav-btn:active {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    color: #000 !important;
+}
+
+.blob-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.6;
+    animation: moveBlob 20s infinite alternate ease-in-out;
+}
+
+.blob1 {
+    width: 500px;
+    height: 500px;
+    background: #00f2fe;
+    top: -150px;
+    left: -150px;
+}
+
+.blob2 {
+    width: 600px;
+    height: 600px;
+    background: #4facfe;
+    bottom: -200px;
+    right: -200px;
+    animation-duration: 25s;
+}
+
+.blob3 {
+    width: 400px;
+    height: 400px;
+    background: #9d4edd;
+    top: 50%;
+    left: 40%;
+    animation-duration: 30s;
+}
+
+@keyframes moveBlob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    50% {
+        transform: translate(100px, -80px) scale(1.2);
+    }
+    100% {
+        transform: translate(-100px, 80px) scale(1);
+    }
+}
